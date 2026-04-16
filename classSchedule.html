@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>classSchedule</title>
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; }
+    table{
+      width:1100px;
+      border-collapse:collapse;
+      table-layout:fixed;
+      text-align:center;
+    }
+    caption{
+      font-weight:bold;
+      padding:10px;
+      font-size:18px;
+    }
+    th, td{
+      border:1px solid #555;
+      padding:12px;
+      vertical-align:top;
+      word-wrap:break-word;
+    }
+    td{ height:95px; }
+    ul{
+      margin:8px 0 0 18px;
+      padding:0;
+      text-align:left;
+    }
+    li{ margin-bottom:4px; }
+  </style>
+</head>
+<body>
+
+<table>
+  <caption>CLASS SCHEDULE</caption>
+  <tr>
+    <th style="width:160px;">TIME</th>
+    <th>MON</th><th>TUE</th><th>WED</th><th>THU</th><th>FRI</th><th>SAT</th>
+  </tr>
+
+  <!-- 7-8 -->
+  <tr>
+    <td>7:00 AM - 8:00 AM</td>
+
+    <td rowspan="3" style="background:#9ddcff;">
+      <strong>ADVANCED DATABASE SYSTEMS</strong>
+      <ul><li>Read chapter</li><li>Practice SQL</li></ul>
+    </td>
+
+    <td rowspan="3" style="background:#ffd6a5;">
+      <strong>FOREIGN LANGUAGE</strong><br><b>(Online Class)</b>
+      <ul><li>Vocabulary practice</li></ul>
+    </td>
+
+    <td style="background:#fff;">&nbsp;</td>
+    <td style="background:#fff;">&nbsp;</td>
+
+    <td rowspan="3" style="background:#ffb3b3;">
+      <strong>ART APPRECIATION</strong>
+      <ul><li>Reflection</li><li>Artwork notes</li></ul>
+    </td>
+
+    <td rowspan="5" style="background:#d0d0d0;">
+      <strong>NETWORKING 2</strong>
+      <ul><li>Hands-on lab</li><li>Recitation</li></ul>
+    </td>
+  </tr>
+
+  <!-- 8-9 -->
+  <tr>
+    <td>8:00 AM - 9:00 AM</td>
+    <td style="background:#fff;">&nbsp;</td>
+    <td style="background:#fff;">&nbsp;</td>
+  </tr>
+
+  <!-- 9-10 -->
+  <tr>
+    <td>9:00 AM - 10:00 AM</td>
+    <td style="background:#fff;">&nbsp;</td>
+
+    <td rowspan="2" style="background:#cdb4ff;">
+      <strong>INTEGRATIVE PROGRAMMING &amp; TECHNOLOGIES</strong>
+      <ul><li>Lab task</li><li>Submit code</li></ul>
+    </td>
+  </tr>
+
+  <!-- 10-11 -->
+  <tr>
+    <td>10:00 AM - 11:00 AM</td>
+
+    <td style="background:#fff;">&nbsp;</td>
+
+    <td rowspan="2" style="background:#a0c4ff;">
+      <strong>PATHFIT 4</strong><br><b>(Online Class)</b>
+      <ul><li>Workout</li></ul>
+    </td>
+
+    <td rowspan="2" style="background:#9ddcff;">
+      <strong>ADVANCED DATABASE SYSTEMS</strong>
+      <ul><li>Discussion</li></ul>
+    </td>
+
+    <!-- THU is already IPT rowspan from 9-11 -->
+
+    <td rowspan="3" style="background:#ffd6a5;">
+      <strong>INTRODUCTION TO DATA ANALYTICS</strong>
+      <ul><li>Assignment</li><li>Study notes</li><li>Review</li></ul>
+    </td>
+
+    <!-- SAT is already NETWORKING rowspan 7-12 -->
+  </tr>
+
+  <!-- 11-12 -->
+  <tr>
+    <td>11:00 AM - 12:00 NN</td>
+
+    <td rowspan="2" style="background:#caffbf;">
+      <strong>EVENT DRIVEN PROGRAMMING</strong>
+      <ul><li>Coding exercise</li></ul>
+    </td>
+
+    <!-- THU (9-11) ends here, so put THU empty at 11-12 -->
+    <td style="background:#fff;">&nbsp;</td>
+  </tr>
+
+  <!-- 12-1 -->
+  <tr>
+    <td>12:00 NN - 1:00 PM</td>
+
+    <td style="background:#fff;">&nbsp;</td> <!-- Tue 12-1 -->
+    <td style="background:#fff;">&nbsp;</td> <!-- Wed 12-1 -->
+    <td style="background:#fff;">&nbsp;</td> <!-- Thu 12-1 -->
+
+    <!-- Fri is still Data Analytics rowspan 10-1 -->
+    <td style="background:#fff;">&nbsp;</td> <!-- Sat after Networking -->
+  </tr>
+
+  <!-- 1-2 -->
+  <tr>
+    <td>1:00 PM - 2:00 PM</td>
+    <td style="background:#fff;">&nbsp;</td> <!-- Mon -->
+    <td rowspan="2" style="background:#ffd6a5;">
+      <strong>INTRO TO DATA ANALYTICS</strong>
+      <ul><li>Practice problems</li></ul>
+    </td>
+    <td style="background:#fff;">&nbsp;</td> <!-- Wed -->
+    <td style="background:#fff;">&nbsp;</td> <!-- Thu -->
+    <td style="background:#fff;">&nbsp;</td> <!-- Fri BREAK -->
+    <td style="background:#fff;">&nbsp;</td> <!-- Sat -->
+  </tr>
+
+  <!-- 2-3 -->
+  <tr>
+    <td>2:00 PM - 3:00 PM</td>
+    <td style="background:#fff;">&nbsp;</td> <!-- Mon -->
+    <td style="background:#fff;">&nbsp;</td> <!-- Wed -->
+    <td style="background:#fff;">&nbsp;</td> <!-- Thu -->
+
+    <td rowspan="3" style="background:#cdb4ff;">
+      <strong>INTEGRATIVE PROGRAMMING &amp; TECHNOLOGIES</strong>
+      <ul><li>Project work</li></ul>
+    </td>
+
+    <td style="background:#fff;">&nbsp;</td> <!-- Sat -->
+  </tr>
+
+  <!-- 3-4 -->
+  <tr>
+    <td>3:00 PM - 4:00 PM</td>
+    <td style="background:#fff;">&nbsp;</td> <!-- Mon -->
+    <td rowspan="2" style="background:#bdb2ff;">
+      <strong>WEB SYSTEMS &amp; TECHNOLOGIES</strong>
+      <ul><li>HTML activity</li></ul>
+    </td>
+    <td style="background:#fff;">&nbsp;</td> <!-- Wed -->
+    <td style="background:#fff;">&nbsp;</td> <!-- Thu -->
+    <!-- Fri IPT is spanning 2-5, so DO NOT add a Fri cell here -->
+    <td style="background:#fff;">&nbsp;</td> <!-- Sat -->
+  </tr>
+
+  <!-- 4-5 -->
+  <tr>
+    <td>4:00 PM - 5:00 PM</td>
+    <td style="background:#fff;">&nbsp;</td> <!-- Mon -->
+    <td style="background:#fff;">&nbsp;</td> <!-- Wed -->
+    <td style="background:#fff;">&nbsp;</td> <!-- Thu -->
+    <!-- Fri IPT is still spanning -->
+    <td style="background:#fff;">&nbsp;</td> <!-- Sat -->
+  </tr>
+
+  <!-- 5-8 -->
+  <tr>
+    <td>5:00 PM - 8:00 PM</td>
+    <td style="background:#fff;">&nbsp;</td> <!-- Mon -->
+
+    <td style="background:#caffbf;">
+      <strong>EVENT DRIVEN PROGRAMMING</strong>
+      <ul><li>Programming task</li></ul>
+    </td>
+
+    <td style="background:#bdb2ff;">
+      <strong>WEB SYSTEMS &amp; TECHNOLOGIES</strong>
+      <ul><li>Lab activity</li></ul>
+    </td>
+
+    <td style="background:#fff;">&nbsp;</td> <!-- Thu -->
+    <td style="background:#fff;">&nbsp;</td> <!-- Fri -->
+    <td style="background:#fff;">&nbsp;</td> <!-- Sat -->
+  </tr>
+
+</table>
+
+</body>
+</html>
